@@ -134,7 +134,6 @@ if __name__ == "__main__":
         if args.use_binaries:
             options["use_binaries"] = args.use_binaries
 
-        # Parse unknown arguments and add them to runtime_options
         options["runtime_options"] = parse_unknown_arguments(unknown)
 
     except Exception:
