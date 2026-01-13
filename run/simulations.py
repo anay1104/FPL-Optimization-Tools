@@ -27,6 +27,7 @@ def get_options_from_args(options):
 
 def setup_binary_files():
     settings = load_settings()
+    # For moose:  just added get datasource to fix the original.csv requirement.
     source = settings.get("datasource", {})
     if settings.get("generate_binary_files"):
         print("Generating binary files")
